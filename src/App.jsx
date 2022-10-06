@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import Hero from "./components/Hero";
 import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
+import Stats from "./components/Stats";
 
 function App() {
   // NavMobile
@@ -26,11 +27,12 @@ function App() {
       <Hero />
       <div
         className={`${
-          openNavMobile ? "right:0" : "-right-full"
-        } fixed z-10 top-0 right-0 h-full transition-all duration-200`}
+          openNavMobile ? "right-0" : "-right-full"
+        } fixed z-10 top-0 h-full transition-all duration-200`}
       >
         <NavMobile setOpenNavMobile={setOpenNavMobile} />
       </div>
+      <Stats />
     </div>
   );
 }

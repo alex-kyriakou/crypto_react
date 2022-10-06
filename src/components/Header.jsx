@@ -21,7 +21,7 @@ function Header({ setOpenNavMobile }) {
         <a href="#">
           <img src={Logo} alt="logo " />
         </a>
-        <div className="hidden lg:flex gap-x-[55px] pl-[55px] w-full justify-between">
+        <div className="hidden lg:flex gap-x-[55px] pl-[55px] w-full justify-end">
           <Nav />
           <LoginRegister />
         </div>
