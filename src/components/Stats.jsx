@@ -4,14 +4,15 @@ import { HiChartBar, HiUser, HiGlobe } from "react-icons/hi";
 
 function Stats() {
   return (
-    <section className="pt-24">
-      <div className="container mx-auto">
-        <div className="flex flex-col  lg:flex-row lg:justify-between">
+    <section className="pt-24 container mx-auto">
+      <div className="flex  lg:justify-between md:place-content-center">
+        <div className="flex lg:w-full flex-col   lg:flex-row lg:justify-between">
           {/* Item */}
           <div
             className="flex  items-center gap-x-6 my-6"
             data-aos="fade-in"
             data-aos-delay="1200"
+            data-aos-offset="400"
           >
             {/* Icon */}
             <div className="bg-white/10 text-blue text-2xl lg:text-4xl h-20 w-20 rounded-full flex justify-center items-center">
@@ -30,6 +31,7 @@ function Stats() {
             className="flex items-center gap-x-6 my-6"
             data-aos="fade-in"
             data-aos-delay="1400"
+            data-aos-offset="400"
           >
             {/* Icon */}
             <div className="bg-white/10 text-blue text-2xl lg:text-4xl h-20 w-20 rounded-full flex justify-center items-center">
@@ -48,6 +50,7 @@ function Stats() {
             className="flex items-center gap-x-6 my-6"
             data-aos="fade-in"
             data-aos-delay="1600"
+            data-aos-offset="400"
           >
             {/* Icon */}
             <div className="bg-white/10 text-blue text-2xl lg:text-4xl h-20 w-20 rounded-full flex justify-center items-center">
