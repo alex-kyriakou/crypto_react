@@ -8,12 +8,12 @@ import Nav from "./Nav";
 // Import Icons
 import { CgMenuRight } from "react-icons/cg";
 
-function Header() {
+function Header({ setOpenNavMobile }) {
   return (
     <header
       className="py-[30px] lg:pt-[60px]"
       data-aos="fade-in"
-      data-aos-delay="800"
+      data-aos-delay="1200"
       data-aos-duration="2000"
     >
       <div className="container mx-auto flex items-center justify-between">
@@ -26,7 +26,10 @@ function Header() {
           <LoginRegister />
         </div>
         {/* open Mobile Nav button */}
-        <div className="lg:hidden cursor-pointer">
+        <div
+          onClick={() => setOpenNavMobile(true)}
+          className="lg:hidden cursor-pointer"
+        >
           <CgMenuRight className="text-2xl" />
         </div>
       </div>
