@@ -13,6 +13,7 @@ import Calculatetor from "./components/Calculatetor";
 import Trade from "./components/Trade";
 import Features from "./components/Features";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 function App() {
   // NavMobile
@@ -43,7 +44,7 @@ function App() {
       <Trade />
       <Features />
       <Newsletter />
-      <div className="h-[2000px]"></div>
+      <Footer />
     </div>
   );
 }
