@@ -9,6 +9,8 @@ import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
 import Stats from "./components/Stats";
 import Why from "./components/Why";
+import Calculatetor from "./components/Calculatetor";
+import Trade from "./components/Trade";
 
 function App() {
   // NavMobile
@@ -35,6 +37,8 @@ function App() {
       </div>
       <Stats />
       <Why />
+      <Calculatetor />
+      <Trade />
       <div className="h-[2000px]"></div>
     </div>
   );
