@@ -11,6 +11,8 @@ import Stats from "./components/Stats";
 import Why from "./components/Why";
 import Calculatetor from "./components/Calculatetor";
 import Trade from "./components/Trade";
+import Features from "./components/Features";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   // NavMobile
@@ -39,6 +41,8 @@ function App() {
       <Why />
       <Calculatetor />
       <Trade />
+      <Features />
+      <Newsletter />
       <div className="h-[2000px]"></div>
     </div>
   );

@@ -10,12 +10,20 @@ function Trade() {
   return (
     <section className="section  bg-gradient-to-b bg-[#4e46e5] text-darkblue ">
       <div className="container mx-auto">
-        <h2 className="section-title text-white text-center mb-16">
+        <h2
+          className="section-title text-white text-center mb-16"
+          data-aos="fade-up"
+          data-aos-offset="400"
+        >
           Trade securely and market the high growth cryptocurrencies.
         </h2>
       </div>
       {/* Items */}
-      <div className="flex flex-col gap-[45px]  md:flex-row md:gap-[30px] lg:flex-row px-6">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="450"
+        className="flex flex-col gap-[45px]  md:flex-row md:gap-[30px] lg:flex-row px-6"
+      >
         {currency.map((item, index) => {
           const { image: img, name, abbr, description: desc } = item;
 
@@ -26,7 +34,7 @@ function Trade() {
                 name === itemName
                   ? "bg-[#3c35b9] text-white border-2 border-white"
                   : "bg-white text-darkblue"
-              } bg-white text-darkblue w-full rounded-md px-6 py-12 shadow-primary transition-300 cursor-pointer`}
+              } bg-white text-darkblue w-full mx-auto max-w-[350px] rounded-md px-6 py-12 shadow-primary transition-300 cursor-pointer`}
               key={index}
             >
               {/* item image */}
